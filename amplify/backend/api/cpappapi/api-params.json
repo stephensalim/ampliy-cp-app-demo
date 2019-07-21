@@ -1,0 +1,53 @@
+{
+    "paths": [
+        {
+            "name": "/getapprovals",
+            "lambdaFunction": "cpgetapprovals",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/signal",
+            "lambdaFunction": "cpsignal",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "cpappapi",
+    "apiName": "cpappapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "cpgetapprovals"
+        },
+        {
+            "lambdaFunction": "cpsignal"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "cp-app-demo-dev-20190719065639-authRole",
+        "unAuthRoleName": "cp-app-demo-dev-20190719065639-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "cpgetapprovals",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        },
+        {
+            "category": "function",
+            "resourceName": "cpsignal",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "d26d1fa9"
+}

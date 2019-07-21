@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "cp-app-demo-dev-20190719065639-authRole",
+            "UnauthRoleArn": "arn:aws:iam::022787131977:role/cp-app-demo-dev-20190719065639-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::022787131977:role/cp-app-demo-dev-20190719065639-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "cp-app-demo-dev-20190719065639-deployment",
+            "UnauthRoleName": "cp-app-demo-dev-20190719065639-unauthRole",
+            "StackName": "cp-app-demo-dev-20190719065639",
+            "StackId": "arn:aws:cloudformation:us-west-2:022787131977:stack/cp-app-demo-dev-20190719065639/5b629d40-a9f2-11e9-ac7a-0aeceae62d6e"
+        },
+        "categories": {
+            "auth": {
+                "cpappdemoab706cd8": {}
+            }
+        }
+    }
+}
