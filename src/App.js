@@ -3,7 +3,7 @@ import React from 'react';
 
 import awsconfig from './aws-exports';
 import Amplify, { API } from 'aws-amplify';
-import { withAuthenticator } from "aws-amplify-react";
+// import { withAuthenticator } from "aws-amplify-react";
 
 Amplify.configure(awsconfig);
 
@@ -81,5 +81,5 @@ class App extends React.Component {
   
 }
 
-// export default App
-export default withAuthenticator(App , true);
+export default App
+// export default withAuthenticator(App , true);
