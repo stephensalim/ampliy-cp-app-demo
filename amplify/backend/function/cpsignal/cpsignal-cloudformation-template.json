@@ -70,24 +70,6 @@
 		"LambdaExecutionRole": {
 			"Type": "AWS::IAM::Role",
 			"Properties": {
-				"RoleName": {
-					"Fn::If": [
-						"ShouldNotCreateEnvResources",
-						"cpappdemoLambdaRolef696b9b7",
-						{
-							"Fn::Join": [
-								"",
-								[
-									"cpappdemoLambdaRolef696b9b7",
-									"-",
-									{
-										"Ref": "env"
-									}
-								]
-							]
-						}
-					]
-				},
 				"AssumeRolePolicyDocument": {
 					"Version": "2012-10-17",
 					"Statement": [
